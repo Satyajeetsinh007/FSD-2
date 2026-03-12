@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <p id="p1" style="font-size: 20px;">Hello</p>
+</head>
+
+<body>
+    <script>
+        const p = document.getElementById("p1");
+        let size = 22;
+        const a = setInterval(() => {
+            p.style.fontSize = size + "px";
+            size += 1;
+            if (size >= 40) {
+                clearInterval(a);
+            }
+        }, 100)
+    </script>
+</body>
+
+</html>
